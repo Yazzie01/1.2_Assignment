@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
 	<title>Form Activity Solution File</title>
-<!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
+<!--TO-DO: ADD LINK TO CSS HERE-->
 </head>
 <body>
 	<a href="#main-content" id="skipLink">Skip to main content</a>
@@ -28,22 +28,22 @@
 			<h2>Coding Semantic and Accessible Forms!</h2>
 			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
 
-<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+<!--TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -->
 			<form action=" https://wp.zybooks.com/form-viewer.php" method="post">
-				<label for="fullName">Full name *</label> 
-					<input id="fullName"/>
-				<label for="email">Email *</label>
-					<input id="email"/>
-				<label for="phone">Phone *</label>
-					<input id="phone"/>
+				<label for="fullName">Full name <span class="required">*<span></label> 
+					<input id="fullName" autocomplete="name" required>
+				<label for="email">Email <span class="required">*<span></label>
+					<input id="email" autocomplete="name" required>
+				<label for="phone">Phone <span class="required">*<span></span></label>
+					<input id="phone" type="text" autocomplete="name" required>
 				<fieldset>
-					<legend for="prefContact">Preferred Contact Method *</legend>
+					<legend>Preferred Contact Method <span class="required">*<span></span></legend>
 					<input id="prefPhone" type="radio" name="Phone" value="methodPhone">
 					<label for="prefPhone">Phone</label>
 					<input id="prefEmail" type="radio" name="Email" value="methodEmail">
 					<label for="prefEmail">Email</label>
-					</fieldset>
-					<label for="myState" id="State">State *</label>
+				</fieldset>
+					<label for="myState" id="State">State <span class="required">*<span></span></label>
 					<select name="myState" id="myState">
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
@@ -97,9 +97,9 @@
 						<option value="WI">Wisconsin</option>
 						<option value="WY">Wyoming</option>
 					</select>
-				<label>Messages</label>
+				<label for="Message">Messages <span class="required">*<span></span></label>
 					<textarea></textarea>
-				<input type="submit" name="submit" value="Submit"/>
+				<input type="submit" name="submit" value="Submit">
 			</form> 
 		</article>
 	</main>
